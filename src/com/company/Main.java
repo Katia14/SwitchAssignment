@@ -49,33 +49,42 @@ public class Main {
                 System.out.println("Please enter correct grade in UPPER case!");
         }
         //Assignment 2.3
-        int x = 10;
-        int y = 3;
+        int x = 0;
+        int y = 0;
         char action = 'p';
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter action: ");
+        {
+            System.out.print("Please enter value for x: ");
+        }
+        x = input.nextInt();
+        {
+            System.out.print("Please enter value for y: ");
+        }
+        y = input.nextInt();
+
+        System.out.print("Please enter required action: ");
         action = sc.next().charAt(0);
         switch (action) {
             case '+':
-                System.out.println(x + y);
+                System.out.println("The sum is: " + (x + y));
                 break;
             case '-':
-                System.out.println(x - y);
+                System.out.println("The difference is: " + (x - y));
                 break;
             case '*':
-                System.out.println(x * y);
+                System.out.println("The product is: " + (x * y));
                 break;
             case '%':
-                System.out.println(x % y);
+                System.out.println("The quotient is: " + (x % y));
                 break;
             case 'p':
                 System.out.println("Both elements are: " + x + " and " + y);
                 break;
             case 'b':
-                System.out.println(x > y);
+                System.out.println("X bigger than Y: " + (x > y));
                 break;
             case 's':
-                System.out.println(x < y);
+                System.out.println("X smaller than Y: " + (x < y));
                 break;
             default:
                 System.out.println("Please enter correct action");
